@@ -1,6 +1,8 @@
 -- Databricks notebook source
-select 1;
+-- MAGIC %sh
+-- MAGIC cat  /etc/environment
 
 -- COMMAND ----------
 
-select 2;
+-- MAGIC %sql
+-- MAGIC select '$DB_HOME'
