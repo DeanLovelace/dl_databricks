@@ -10,14 +10,14 @@
 -- 1.00 2020-12-27  thwaitef    Initial Version
 -- 1.01 2021-02-15  lovelad1    Add xubname
 ------------------------------------------------------------------------------
-
+-- COMMAND ----------
 -- compact tables
 set hive.merge.tezfiles=true;
 set hive.merge.smallfiles.avgsize=128000000;
 set hive.merge.size.per.task=128000000;
-
+-- COMMAND ----------
 DROP TABLE IF EXISTS ${environment}.${schema}ODS_CRM_BUT000 PURGE;
-
+-- COMMAND ----------
  CREATE TABLE IF NOT EXISTS ${environment}.${schema}ODS_CRM_BUT000 (
     partner   VARCHAR(10)
     ,partner_guid  VARCHAR(32)
